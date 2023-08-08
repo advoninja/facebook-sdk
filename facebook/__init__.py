@@ -41,7 +41,7 @@ __version__ = version.__version__
 FACEBOOK_GRAPH_URL = "https://graph.facebook.com/"
 FACEBOOK_WWW_URL = "https://www.facebook.com/"
 FACEBOOK_OAUTH_DIALOG_PATH = "dialog/oauth?"
-VALID_API_VERSIONS = ["3.1", "3.2", "3.3", "4.0", "5.0", "6.0", "7.0", "8.0"]
+VALID_API_VERSIONS = ["3.1", "3.2", "3.3", "4.0", "5.0", "6.0", "7.0", "8.0", "17.0"]
 VALID_SEARCH_TYPES = ["place", "placetopic"]
 
 
@@ -84,7 +84,7 @@ class GraphAPI(object):
         app_secret=None,
     ):
         # The default version is only used if the version kwarg does not exist.
-        default_version = VALID_API_VERSIONS[7]
+        default_version = VALID_API_VERSIONS[-1]
 
         self.access_token = access_token
         self.timeout = timeout
